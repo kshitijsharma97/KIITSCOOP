@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/about"
+        android:layout_width="0dp"
+        android:layout_gravity="top"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/about"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_gravity="top"
+        android:text="KIITSCOOP"
+        style="@style/AppTheme"
+        android:paddingLeft="80dp"
+        android:clickable="true"
+        android:paddingRight="65dp"
+        android:layout_weight="8"
+        android:textColor="#000000"
+        android:id="@+id/mytext"
+        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/kiitlogo"
+        android:layout_width="0dp"
+        android:layout_gravity="top"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/black"/>
+</LinearLayout>

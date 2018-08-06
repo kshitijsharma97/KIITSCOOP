@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context="in.kiitscoop.kiitscoop.FirstpageActivity"
+    >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/sp1"
+
+        android:src="@drawable/ksop"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="63dp"
+    android:id="@+id/linearLayout2"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true">
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/signinbutton"
+    android:text="SIGN IN" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"/>
+</LinearLayout>
+</RelativeLayout>
