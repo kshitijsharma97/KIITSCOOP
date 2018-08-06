@@ -209,10 +209,10 @@ public class chatActivity extends AppCompatActivity {
                     .addOnSuccessListener(this, new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             // When the image has successfully uploaded, we get its download URL
-                            Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                            String downloadUrl = taskSnapshot.getStorage().getDownloadUrl().toString();
 
                             // Set the download URL to the message box, so that the user can send it to the database
-                            FriendlyMessage friendlyMessage = new FriendlyMessage(null, mUsername, downloadUrl.toString());
+                            FriendlyMessage friendlyMessage = new FriendlyMessage(null, mUsername, downloadUrl);
                             mMessagesDatabaseReference.push().setValue(friendlyMessage);
                         }
                     });
